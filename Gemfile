@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.11'
 
+gem 'devise'
+
 gem 'better_errors'
 gem "binding_of_caller"
 gem "pry"
@@ -9,6 +11,7 @@ gem "pry"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'newrelic_rpm'
 
 group :development, :test do
   gem 'sqlite3'
