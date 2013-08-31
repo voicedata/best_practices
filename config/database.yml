@@ -22,4 +22,7 @@ test:
 
 production:
   adapter: postgresql
-  database: best_practices
+  host: localhost
+  username: best_practices
+  password: 1234567
+  database: best_practices 
