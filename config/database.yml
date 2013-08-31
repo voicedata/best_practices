@@ -17,13 +17,9 @@ test:
   host: localhost
   adapter: postgresql
   database: best_practices_test
-  pool: 5
-  timeout: 5000
   username: best_practices
   password: 1234567
 
 production:
   adapter: postgresql
   database: best_practices
-  pool: 5
-  timeout: 5000
