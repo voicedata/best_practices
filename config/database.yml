@@ -4,13 +4,11 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
-  host: localhost
   adapter: postgresql
-  database: best_practices 
-  pool: 5
-  timeout: 5000
+  host: localhost
   username: best_practices
   password: 1234567
+  database: best_practices 
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
