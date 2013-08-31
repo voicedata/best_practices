@@ -18,7 +18,7 @@ development:
 test:
   host: localhost
   adapter: postgresql
-  database: best_practices
+  database: best_practices_test
   pool: 5
   timeout: 5000
   username: best_practices

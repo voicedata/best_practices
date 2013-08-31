@@ -1,0 +1,10 @@
+<%if @practices.size > 0%>
+<%=@practices.each do |practice|%>
+<div>
+  <span><%=practice.title%></span>
+  <div><%=practice.content%></div>
+</div>
+<%end%>
+<%else%>
+  no content
+<%end%>

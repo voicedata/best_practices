@@ -13,7 +13,7 @@ Spork.prefork do
   require 'capybara/rspec'
   require 'capybara/rails'
   require 'factory_girl_rails'
-
+  require 'ffaker'
   RSpec.configure do |config|
     # ## Mock Framework
     #
