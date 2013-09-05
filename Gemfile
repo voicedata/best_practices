@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 gem 'rails', '3.2.11'
 gem "rufus-scheduler"
+gem 'rails_12factor', group: :production
 #gem "asset_sync"
 gem 'normalize-rails'
 gem "rails-backbone"
