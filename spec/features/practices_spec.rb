@@ -1,9 +1,7 @@
 require "spec_helper"
 
 describe "best practices page" do
-  before do
-    @user = create :user
-  end
+  let(:user) {create :user}
   context "when I have 5 contents in database" do
     before do
       @practices = []
@@ -23,9 +21,10 @@ describe "best practices page" do
       page.should have_content "no content"
     end
   end
+  
   context "when user logged in" do
     before do
-      login_as @user
+      login_as user
       visit practices_path
     end
     it "display add and sign out links" do
@@ -36,7 +35,7 @@ describe "best practices page" do
 
   context "when user not logged in" do
     before do
-      logout @user
+      logout
       visit practices_path
     end
     it "display sign in link" do

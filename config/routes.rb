@@ -1,9 +1,5 @@
 BestPractices::Application.routes.draw do
 
-  get "practices/index"
-
-  get "practice/index"
-
   devise_for :users
 
   get "site/home"

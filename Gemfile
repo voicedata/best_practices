@@ -1,12 +1,17 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
 gem 'rails', '3.2.11'
+gem "rufus-scheduler"
+#gem "asset_sync"
+gem 'normalize-rails'
+gem "rails-backbone"
 
 gem 'devise'
+gem 'simple_form'
 
-gem 'better_errors'
-gem "binding_of_caller"
-gem "pry"
+#gem 'better_errors'
+#gem "binding_of_caller"
+#gem "pry"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -27,6 +32,7 @@ group :test, :development  do
   gem 'guard-spork'
   gem 'guard-rspec'
   gem 'guard-bundler'
+  gem 'guard-rails-assets'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
   gem 'ffaker'
@@ -52,6 +58,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'slim-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

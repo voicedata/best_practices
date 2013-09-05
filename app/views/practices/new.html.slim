@@ -1,0 +1,7 @@
+= simple_form_for(@practice) do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :title, input_html: {class: 'input-block-level'}
+    = f.input :content, input_html: {class: 'input-block-level'}
+  .form-actions
+    = f.button :submit
